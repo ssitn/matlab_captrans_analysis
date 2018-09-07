@@ -104,7 +104,7 @@ for jj= 1:size(fitparams,2)
    xlswrite([pwd '\Rs_Rm_Cm.xls'], {fitparams{jj}.filename}, 1, ['A' num2str(jj+start_ind)]);
    xlswrite([pwd '\Rs_Rm_Cm.xls'], fitparams{jj}.Rs_Rm_Cm, 1, ['B' num2str(jj+start_ind)]);
 end
-%% Here you can display goodness of fit vs right borrder for the required recording file
+%% Here you can display goodness of fit vs right border for the required recording file
 jj=2;
 figure
 plot(fitparams{jj}.rbdata, fitparams{jj}.gofdata)
